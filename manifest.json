@@ -1,6 +1,7 @@
 {
-  "name": "Literatura y Pensamiento",
+  "name": "Tomás Kouro",
   "short_name": "Tomás Kouro",
+  "description": "Explora la dimensión de literatura, formación y sesiones terapéuticas de Tomás Kouro.",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#000000",
@@ -9,7 +10,8 @@
     {
       "src": "https://tomaskouro.com/wp-content/uploads/2024/01/logo-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
