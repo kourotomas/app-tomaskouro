@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Literatura y Pensamiento</title>
-    <link rel="manifest" href="manifest.json">
+    <title>Tomás Kouro - Literatura y Pensamiento</title>
+    <meta name="description" content="Ecosistema de élite de Tomás Kouro">
+    
+    <link rel="manifest" href="./manifest.json">
+    <link rel="icon" href="https://tomaskouro.com/wp-content/uploads/2024/01/logo-512.png" type="image/png">
+    
     <style>
         body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #000000; }
         iframe { width: 100%; height: 100%; border: none; }
     </style>
 </head>
 <body>
-    <iframe src="https://www.tomaskouro.com"></iframe>
+
+    <iframe src="https://tomaskouro.com"></iframe>
+
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js');
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js');
+            });
         }
     </script>
 </body>
